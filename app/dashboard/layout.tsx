@@ -1,8 +1,6 @@
 "use client"
 
-import type React from "react"
-
-import { useState } from "react"
+import React, { Suspense, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
@@ -72,8 +70,6 @@ const navigation = [
     ],
   },
 ]
-
-import React, { Suspense } from "react";
 
 export default function DashboardLayout({
   children,
