@@ -47,8 +47,8 @@ Prerequisites
 Installation
 
 bash
-git clone https://github.com/your-username/ai-developer-dashboard.git
-cd ai-developer-dashboard
+git clone https://github.com/An0nym0usn3thunt3r/ai-dev-suite.git
+cd ai-dev-suite
 yarn install
 # or
 npm install
