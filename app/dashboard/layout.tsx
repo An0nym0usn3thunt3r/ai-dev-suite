@@ -29,6 +29,7 @@ import {
   SidebarTrigger,
 } from "@/components/ui/sidebar"
 import { ModeToggle } from "@/components/mode-toggle"
+ // @ts-ignore: Missing type declarations for 'lucide-react'
 import {
   Home,
   Code,
