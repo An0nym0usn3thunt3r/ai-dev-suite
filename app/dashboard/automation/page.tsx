@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, Suspense } from "react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -147,7 +147,7 @@ const getStepIcon = (status: string) => {
   }
 }
 
-export default function AutomationPage() {
+function AutomationContent() {
   const [selectedRun, setSelectedRun] = useState(automationRuns[0])
 
   return (
@@ -423,5 +423,13 @@ export default function AutomationPage() {
         </Card>
       </div>
     </div>
+  )
+}
+
+export default function AutomationPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <AutomationContent />
+    </Suspense>
   )
 }
